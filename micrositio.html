@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/LogoGota.jpg" type="image/jpeg">
+    <title>Contratar Servicio - Servicio de Agua HS</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #00172D, #003B73);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            background-color: #002A4D;
+            border-radius: 10px;
+            padding: 20px 30px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button {
+            background: linear-gradient(90deg, #FF8C00, #FF3E00);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        button:hover {
+            background: linear-gradient(90deg, #FF3E00, #FF8C00);
+            transform: scale(1.05);
+        }
+
+        .back-button {
+            margin-top: 10px;
+            background: linear-gradient(90deg, #ce7902, #e4c605);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: linear-gradient(90deg, #e4c605, #ce7902);
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #cccccc;
+        }
+
+        footer em {
+            color: #ffffff;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <header><br><br>Contratar Servicio</header>
+
+    <div class="container">
+        <h2>Gracias por confiar en nosotros</h2>
+        <p>Por favor, completa el siguiente formulario para contratar el servicio:</p>
+
+        <form action="https://formsubmit.co/ytdriper@gmail.com" method="POST">
+            <!-- Nombre del cliente -->
+             <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Correo del cliente -->
+            <label for="phone">Teléfono:</label>
+            <input type="text" id="phone" name="phone" placeholder="Ingresa tu número de teléfono" required>
+
+            <!-- Selección del tamaño de pipa -->
+            <label for="service">Capacidad de pipa requerida:</label>
+            <select id="service" name="service">
+                <option value="10000L">10,000L</option>
+                <option value="20000L">20,000L</option>
+                <option value="45000L">45,000L</option>
+            </select>
+
+            <!-- Comentarios adicionales -->
+            <label for="comments">Comentarios adicionales:</label>
+            <textarea id="comments" name="comments" placeholder="Especifica cualquier detalle adicional..." required></textarea>
+
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Enviar solicitud</button>
+        </form>
+    </div>
+
+    <button class="back-button" onclick="history.back()">← Volver a la página anterior</button>
+
+    <footer>
+        &copy; 2024 Servicio de Agua HS. Todos los derechos reservados.
+        <br><em>Comprometidos con la excelencia.</em>
+    </footer>
+</body>
+</html>
